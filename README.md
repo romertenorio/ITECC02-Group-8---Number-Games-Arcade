@@ -29,21 +29,3 @@ The program creates a random 4-digit password. Players have 8 attempts to guess 
 
 Players take turns adding 1, 2, or 3 to a running total that starts at 0. The player who makes the total exactly 21 wins. With one player, the computer plays the other turns.
 
-## Built With
-
-- C++
-- Selection statements (`if-else` and `switch`)
-- Loops (`for`, `while`, and `do-while`)
-- Void functions
-- Arrays
-
-## How to Run
-
-Compile and run with any C++11 compiler, for example:
-
-```bash
-g++ -std=c++11 main.cpp -o arcade
-./arcade
-```
-
-Replace `main.cpp` with the name of your source file. The game uses ANSI color codes, so use a terminal that supports them.
