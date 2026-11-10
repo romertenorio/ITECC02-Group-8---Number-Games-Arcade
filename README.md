@@ -1,4 +1,4 @@
-# ITECC02 Group 8: The Magic Number: A Number Games Arcade
+# ITECC02 Group 8 - The Magic Number: A Number Games Arcade
 
 A console number games arcade for one to four players, with three selectable games: **Hot or Cold?**, **I Forgot My Password...**, and **Race to 21**. It aims to entertain players and to encourage logic and careful thinking over random guessing.
 
