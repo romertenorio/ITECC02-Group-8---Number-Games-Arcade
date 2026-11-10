@@ -8,7 +8,31 @@
 
 using namespace std;
 
-// FUNCTION 1: GAME NAMES AND WELCOME BANNERS 
+
+// FUNCTION 1: WELCOME BANNER
+void welcomeBanner(string space){
+        string mode1, mode2, mode3;
+        mode1 = "𝗛𝗢𝗧 𝗢𝗥 𝗖𝗢𝗟𝗗";
+        mode2 = "𝗣𝗔𝗦𝗦𝗪 𝗢𝗥𝗗!";
+        mode3 = "𝗥𝗔𝗖𝗘 𝗧𝗢 𝟮𝟭";
+        
+        cout << "                   ______   __  __   ______     "<< endl;
+        cout << "                ⢀ /\\__  _\\ /\\ \\_\\ \\ /\\  ___\\   " << endl;
+        cout << "              ⢀⣴⣿ \\/_/\\ \\/ \\ \\  __ \\\\ \\  __\\    " << endl;
+        cout << "             ⣰⣿⣿⣿    \\ \\_\\  \\ \\_\\ \\_\\\\ \\_____\\ " << endl;
+        cout << "           ⣴⣿⡿⠋⣿⣿     \\/_/   \\/_/\\/_/ \\/_____/ " << endl;
+        cout << " ⠤⣤⣤⣤⣤⣤⣤⣤⣤⣿⣿⠋⠀ ⣿⣷⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⡶⠶⠶⠶⠶⠶⠶⠶⠶⠖⠒⠒⠒⠒⠒⠒⠒⠒⠒⠒⠒⠒⠒⠒⠒⠒⠒⠒⠒⠒⠒⠒⠒⠒⠒⠒⠒⠒⠒⠒ " << endl;
+        cout << "  ⠘⢿⣿⣿⣟⠛⠛⠛⠛⠁⠀⠀ ⠙⠛⠛⠛⠋⠉⠉⠉⠉ " << endl;
+        cout << "    ⠈⠛⣿⣿⣦⡀          ███╗   ███╗ █████╗  ██████╗ ██╗ ██████╗    ███╗   ██╗██╗   ██╗███╗   ███╗██████╗ ███████╗██████╗ " << endl;
+        cout << "        ⢹⣿⡿         ████╗ ████║██╔══██╗██╔════╝ ██║██╔════╝    ████╗  ██║██║   ██║████╗ ████║██╔══██╗██╔════╝██╔══██╗     " << endl;
+        cout << "        ⣾⣿⠁⢀⣤⣾⣦⡀    ██╔████╔██║███████║██║  ███╗██║██║         ██╔██╗ ██║██║   ██║██╔████╔██║██████╔╝█████╗  ██████╔╝ " << endl;
+        cout << "       ⣸⣿⢇⣶⣿⠟⠙⠻⣿⣄   ██║╚██╔╝██║██╔══██║██║   ██║██║██║         ██║╚██╗██║██║   ██║██║╚██╔╝██║██╔══██╗██╔══╝  ██╔══██╗" << endl;
+        cout << "      ⢠⣿⣿⠿⠋⠁⠀⠀⠀⠀⠉⠳⣄ ██║ ╚═╝ ██║██║  ██║╚██████╔╝██║╚██████╗    ██║ ╚████║╚██████╔╝██║ ╚═╝ ██║██████╔╝███████╗██║  ██║" << endl;
+        cout << "      ⡿⠋⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀ ⠙╚═╝     ╚═╝╚═╝  ╚═╝ ╚═════╝ ╚═╝ ╚═════╝    ╚═╝  ╚═══╝ ╚═════╝ ╚═╝     ╚═╝╚═════╝ ╚══════╝╚═╝  ╚═╝\n\n " << endl;
+        
+}
+
+// FUNCTION 2: GAME NAMES AND RESPECTIVE WELCOME BANNERS 
 void gameMode(int mode, string space){
     string mode1, mode2, mode3;
         mode1 = "𝗛𝗢𝗧 𝗢𝗥 𝗖𝗢𝗟𝗗?";
@@ -32,7 +56,7 @@ void gameMode(int mode, string space){
         cout << space << "˚°◦.¸¸.◦°˚°◦.¸¸.◦°˚°◦.¸¸.◦°˚°◦.¸¸.◦°˚°◦.¸¸.◦°˚°◦.¸¸.◦°˚°◦.¸¸.◦°˚°◦.¸¸.◦°˚°◦.¸¸.◦°\n";
         cout << space << ". ݁₊ ⊹ . ݁ ⟡ ݁ . ⊹ ₊ ݁. . ݁₊ ⊹ . ݁ ⟡ ݁ . ⊹ ₊ ݁. . ݁₊ ⊹ . ݁ ⟡ ݁ . ⊹ ₊ ݁. . ݁₊ ⊹ . ݁ ⟡ ݁ . ⊹ ₊ ݁.\n";
         cout << space << "─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─\n";
-        cout << space << "                       𝗪𝗘𝗟𝗖𝗢𝗠𝗘 𝗧𝗢 𝗧𝗛𝗘 \"" << mode2 << "\" 𝗚𝗔𝗠𝗘!" << endl;
+        cout << space << "                  𝗪𝗘𝗟𝗖𝗢𝗠𝗘 𝗧𝗢 𝗧𝗛𝗘 \"" << mode2 << "\" 𝗚𝗔𝗠𝗘!" << endl;
         cout << space << "─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─\n";
         cout << space << ". ݁₊ ⊹ . ݁ ⟡ ݁ . ⊹ ₊ ݁. . ݁₊ ⊹ . ݁ ⟡ ݁ . ⊹ ₊ ݁. . ݁₊ ⊹ . ݁ ⟡ ݁ . ⊹ ₊ ݁. . ݁₊ ⊹ . ݁ ⟡ ݁ . ⊹ ₊ ݁.\n";
         cout << space << "¸¸.◦°˚°◦.¸¸.◦°˚°◦.¸¸.◦°˚°◦.¸¸.◦°˚°◦.¸¸.◦°˚°◦.¸¸.◦°˚°◦.¸¸.◦°˚°◦.¸¸.◦°˚°◦.¸¸.◦°˚°◦.\n\n";
@@ -61,7 +85,86 @@ void gameMode(int mode, string space){
     
 }
 
-// FUNCTION 2: GAME RULES AND MECHANICS
+// FUNCTION 3: SELECT GAMEMODE
+void selectGameMode(int& mode, string space){
+        string mode1, mode2, mode3;
+        mode1 = "𝗛𝗢𝗧 𝗢𝗥 𝗖𝗢𝗟𝗗";
+        mode2 = "𝗣𝗔𝗦𝗦𝗪 𝗢𝗥𝗗!";
+        mode3 = "𝗥𝗔𝗖𝗘 𝗧𝗢 𝟮𝟭";
+            
+        cout << space << ". ݁₊ ⊹ . ݁ ⟡ ݁ . ⊹ ₊ ݁. . ݁₊ ⊹ . ݁ ⟡ ݁ . ⊹ ₊ ݁. . ݁₊ ⊹ . ݁ ⟡ ݁ . ⊹ ₊ ݁. . ݁₊ ⊹ . ݁ ⟡ ݁ . ⊹ ₊ ݁.\n";
+        cout << space << "─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─\n";
+        cout << space << "                                   𝗚𝗔𝗠𝗘 𝗠𝗢𝗗𝗘𝗦\n\n";
+        cout << space << "               𝟭 | " << mode1 << "   𝟮 | " << mode2 << "   𝟯 | " << mode3 << endl;
+        cout << space << "─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─\n";
+        cout << space << ". ݁₊ ⊹ . ݁ ⟡ ݁ . ⊹ ₊ ݁. . ݁₊ ⊹ . ݁ ⟡ ݁ . ⊹ ₊ ݁. . ݁₊ ⊹ . ݁ ⟡ ݁ . ⊹ ₊ ݁. . ݁₊ ⊹ . ݁ ⟡ ݁ . ⊹ ₊ ݁.\n";
+        cout << endl;
+        
+        
+        do{
+                cout << space << "Select Game Mode: ";
+                cin >> mode;
+                cout << endl;
+            
+                if(mode < 1 || mode > 3){
+                    gameMode(mode, space);
+                    cin.clear() ;
+                    cin.ignore(100, '\n');
+                    continue;//For default
+                }
+            
+        }while(mode < 1 || mode > 3);
+            
+    }
+
+// FUNCTION 4: ENTER NUMBER OF PLAYERS
+void enterNumPlayer(string playerID[], int& numPlayers, int maxPlayers, string space){
+    // PLAYER COUNT SELECTION MENU
+        do{
+            cout << space << "                 ┌─-─-─-─-─-─-─-─-─-─-─┐ ┌─-─-─-─-─-─-─-─-─-─-─┐\n";
+            cout << space << "                 │    Single Player    │ │     Multiplayer     │\n";
+            cout << space << "                 │         (1)         │ │        (2-4)        │\n";
+            cout << space << "                 └─-─-─-─-─-─-─-─-─-─-─┘ └─-─-─-─-─-─-─-─-─-─-─┘\n\n";
+            cout << space << "How many are playing? ";
+            
+            
+            //No letters
+            if(!(cin >> numPlayers)){
+                cout << "\n" << space << "That is not a number!\n\n";
+                cin.clear();
+                cin.ignore(100, '\n');
+                numPlayers = 0;
+                continue;
+            }
+            cout << "\n";
+            
+            if(numPlayers > maxPlayers){
+                cout << space << "Only 4 people can play!\n\n";
+                continue;
+            }
+            else if(numPlayers <= 0){
+                cout << space << "Number of players cannot be 0.\n\n";
+                continue;
+            }
+        }while(numPlayers > maxPlayers || numPlayers <= 0);
+        
+        cin.ignore(100, '\n'); //clear the leftover Enter before reading names
+        
+        for(int enterPlayers = 0; enterPlayers < numPlayers; enterPlayers++){
+            if(numPlayers > 1){
+            cout << space << "Enter Player " << enterPlayers+1 << "'s Name: ";
+            getline (cin, playerID[enterPlayers]);
+            }
+            
+            else if(numPlayers == 1){
+                cout << space << "Enter Player Name: ";
+                getline (cin, playerID[enterPlayers]);
+            }
+        }
+        
+}
+
+// FUNCTION 5: GAME RULES AND MECHANICS
 void gameMechanics(int mode, string space){
     
     switch(mode){
@@ -80,7 +183,7 @@ void gameMechanics(int mode, string space){
     }
 }
 
-// FUNCTION 3: GAME DISPLAY WINNER BANNER
+// FUNCTION 6: GAME DISPLAY WINNER BANNER
 void hasWon(int mode, string space, const string players[], int numPlayers, string winnerName){
     
     switch(mode){
@@ -118,7 +221,7 @@ void hasWon(int mode, string space, const string players[], int numPlayers, stri
         }
 }
 
-// FUNCTION 4: GAME DISPLAY LOSER BANNER
+// FUNCTION 7: GAME DISPLAY LOSER BANNER
 void hasLost(int mode, int secret, int pass[], string space){
     
     switch(mode){
@@ -155,6 +258,26 @@ void hasLost(int mode, int secret, int pass[], string space){
         }
 }
 
+// FUNCTION 8: PLAY AGAIN
+void playAgain(char& again, string space){
+        // PLAY AGAIN; this runs when the selected game function above finishes playing. 
+        do{
+        cout << "\n\n";
+        cout << space << "                            ┌─-─-─-─-─-─-─-─-─-─-──┐\n";
+        cout << space << "                            │      Play Again?     │\n";
+        cout << space << "                            │         Y | N        │\n";
+        cout << space << "                            └─-─-─-─-─-─-─-─-─-─-──┘\n\n";
+        cout << "\n" << space << "Do you want to play again? (Y/N): ";
+        cin >> again;
+        cout << "\n";
+            
+        if(again != 'y' && again != 'Y' && again != 'N' && again != 'n'){
+                cout << "\n" <<  space << "INVALID INPUT!\n";
+        }
+    
+    }while (again != 'y' && again != 'Y' && again != 'N' && again != 'n'); // The program will keep displaying "Do you want to play again" if the input is NOT Y or N
+}
+
 //---------------------------------------------------------------------
 //                      MAIN GAMES FUNCTIONS
 //---------------------------------------------------------------------
@@ -167,13 +290,11 @@ void playHotOrCold(const string players[], int numPlayers, string space){
     const int range = 30; //fixed range: 0-30
     int secret = rand() % (range + 1); //0 to 30 inclusive
     int guess = 0;
-    int noPass[4] = {0, 0, 0, 0}; //only needed because hasLost() asks for a password array
     bool correct = false;
     string winnerName;
-    
     gameMode(mode, space);
     gameMechanics(mode, space);
-    
+
     //LOGIC
     for(int chances = 1; chances <= 7 && !correct; chances++){
         for(int enterPlayers = 0; enterPlayers < numPlayers; enterPlayers++){
@@ -259,7 +380,7 @@ void playHotOrCold(const string players[], int numPlayers, string space){
     }
     //LOSER
     else{
-        hasLost(mode, secret, noPass, space);
+        hasLost(mode, secret, 0, space);
     }
 }
 
@@ -520,14 +641,9 @@ void playRaceTo21(const string players[], int numPlayers, string space){
         }
     }
 
-
 int main(){
     
     //general
-    string mode1, mode2, mode3;
-    mode1 = "𝗛𝗢𝗧 𝗢𝗥 𝗖𝗢𝗟𝗗";
-    mode2 = "𝗣𝗔𝗦𝗦𝗪 𝗢𝗥𝗗!";
-    mode3 = "𝗥𝗔𝗖𝗘 𝗧𝗢 𝟮𝟭";
     string space = "                        ";
     int mode;
     srand(time(0));
@@ -537,88 +653,14 @@ int main(){
     
     //Play again
     char again;
+    
+        welcomeBanner(space);
+        
+    do{
+        
+        selectGameMode(mode, space);
+        enterNumPlayer(playerID, numPlayers, maxPlayers, space);
 
-        cout << "                   ______   __  __   ______     "<< endl;
-        cout << "                ⢀ /\\__  _\\ /\\ \\_\\ \\ /\\  ___\\   " << endl;
-        cout << "              ⢀⣴⣿ \\/_/\\ \\/ \\ \\  __ \\\\ \\  __\\    " << endl;
-        cout << "             ⣰⣿⣿⣿    \\ \\_\\  \\ \\_\\ \\_\\\\ \\_____\\ " << endl;
-        cout << "           ⣴⣿⡿⠋⣿⣿     \\/_/   \\/_/\\/_/ \\/_____/ " << endl;
-        cout << " ⠤⣤⣤⣤⣤⣤⣤⣤⣤⣿⣿⠋⠀ ⣿⣷⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⡶⠶⠶⠶⠶⠶⠶⠶⠶⠖⠒⠒⠒⠒⠒⠒⠒⠒⠒⠒⠒⠒⠒⠒⠒⠒⠒⠒⠒⠒⠒⠒⠒⠒⠒⠒⠒⠒⠒⠒ " << endl;
-        cout << "  ⠘⢿⣿⣿⣟⠛⠛⠛⠛⠁⠀⠀ ⠙⠛⠛⠛⠋⠉⠉⠉⠉ " << endl;
-        cout << "    ⠈⠛⣿⣿⣦⡀          ███╗   ███╗ █████╗  ██████╗ ██╗ ██████╗    ███╗   ██╗██╗   ██╗███╗   ███╗██████╗ ███████╗██████╗ " << endl;
-        cout << "        ⢹⣿⡿         ████╗ ████║██╔══██╗██╔════╝ ██║██╔════╝    ████╗  ██║██║   ██║████╗ ████║██╔══██╗██╔════╝██╔══██╗     " << endl;
-        cout << "        ⣾⣿⠁⢀⣤⣾⣦⡀    ██╔████╔██║███████║██║  ███╗██║██║         ██╔██╗ ██║██║   ██║██╔████╔██║██████╔╝█████╗  ██████╔╝ " << endl;
-        cout << "       ⣸⣿⢇⣶⣿⠟⠙⠻⣿⣄   ██║╚██╔╝██║██╔══██║██║   ██║██║██║         ██║╚██╗██║██║   ██║██║╚██╔╝██║██╔══██╗██╔══╝  ██╔══██╗" << endl;
-        cout << "      ⢠⣿⣿⠿⠋⠁⠀⠀⠀⠀⠉⠳⣄ ██║ ╚═╝ ██║██║  ██║╚██████╔╝██║╚██████╗    ██║ ╚████║╚██████╔╝██║ ╚═╝ ██║██████╔╝███████╗██║  ██║" << endl;
-        cout << "      ⡿⠋⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀ ⠙╚═╝     ╚═╝╚═╝  ╚═╝ ╚═════╝ ╚═╝ ╚═════╝    ╚═╝  ╚═══╝ ╚═════╝ ╚═╝     ╚═╝╚═════╝ ╚══════╝╚═╝  ╚═╝\n\n " << endl;
-        
-        do{
-        
-        cout << space << ". ݁₊ ⊹ . ݁ ⟡ ݁ . ⊹ ₊ ݁. . ݁₊ ⊹ . ݁ ⟡ ݁ . ⊹ ₊ ݁. . ݁₊ ⊹ . ݁ ⟡ ݁ . ⊹ ₊ ݁. . ݁₊ ⊹ . ݁ ⟡ ݁ . ⊹ ₊ ݁.\n";
-        cout << space << "─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─\n";
-        cout << space << "                                   𝗚𝗔𝗠𝗘 𝗠𝗢𝗗𝗘𝗦\n\n";
-        cout << space << "               𝟭 | " << mode1 << "   𝟮 | " << mode2 << "   𝟯 | " << mode3 << endl;
-        cout << space << "─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─\n";
-        cout << space << ". ݁₊ ⊹ . ݁ ⟡ ݁ . ⊹ ₊ ݁. . ݁₊ ⊹ . ݁ ⟡ ݁ . ⊹ ₊ ݁. . ݁₊ ⊹ . ݁ ⟡ ݁ . ⊹ ₊ ݁. . ݁₊ ⊹ . ݁ ⟡ ݁ . ⊹ ₊ ݁.\n";
-        cout << endl;
-        
-        do{
-            cout << space << "Select Game Mode: ";
-            cin >> mode;
-            cout << endl;
-        
-            if(mode < 1 || mode > 3){
-                gameMode(mode, space);
-                cin.clear() ;
-                cin.ignore(100, '\n');
-                continue;//For default
-            }
-        
-        }while(mode < 1 || mode > 3);
-        
-        // PLAYER COUNT SELECTION 
-        do{
-            cout << space << "                 ┌─-─-─-─-─-─-─-─-─-─-─┐ ┌─-─-─-─-─-─-─-─-─-─-─┐\n";
-            cout << space << "                 │    Single Player    │ │     Multiplayer     │\n";
-            cout << space << "                 │         (1)         │ │        (2-4)        │\n";
-            cout << space << "                 └─-─-─-─-─-─-─-─-─-─-─┘ └─-─-─-─-─-─-─-─-─-─-─┘\n\n";
-            cout << space << "How many are playing? ";
-            
-            
-            //No letters
-            if(!(cin >> numPlayers)){
-                cout << "\n" << space << "That is not a number!\n\n";
-                cin.clear();
-                cin.ignore(100, '\n');
-                numPlayers = 0;
-                continue;
-            }
-            cout << "\n";
-            
-            if(numPlayers > maxPlayers){
-                cout << space << "Only 4 people can play!\n\n";
-                continue;
-            }
-            else if(numPlayers <= 0){
-                cout << space << "Number of players cannot be 0.\n\n";
-                continue;
-            }
-        }while(numPlayers > maxPlayers || numPlayers <= 0);
-        
-        cin.ignore(100, '\n'); //clear the leftover Enter before reading names
-        
-        for(int enterPlayers = 0; enterPlayers < numPlayers; enterPlayers++){
-            if(numPlayers > 1){
-            cout << space << "Enter Player " << enterPlayers+1 << "'s Name: ";
-            getline (cin, playerID[enterPlayers]);
-            }
-            
-            else if(numPlayers == 1){
-                cout << space << "Enter Player Name: ";
-                getline (cin, playerID[enterPlayers]);
-            }
-        }
-        
         cout << "\n";
         
         //Each game has its own function
@@ -640,23 +682,8 @@ int main(){
             gameMode(mode, space);
             break;
         }
-        
-    // PLAY AGAIN; this runs when the selected game function above finishes playing. 
-    do{
-        cout << "\n\n";
-        cout << space << "                            ┌─-─-─-─-─-─-─-─-─-─-──┐\n";
-        cout << space << "                            │      Play Again?     │\n";
-        cout << space << "                            │         Y | N        │\n";
-        cout << space << "                            └─-─-─-─-─-─-─-─-─-─-──┘\n\n";
-        cout << "\n" << space << "Do you want to play again? (Y/N): ";
-        cin >> again;
-        cout << "\n";
-            
-        if(again != 'y' && again != 'Y' && again != 'N' && again != 'n'){
-                cout << "\n" <<  space << "INVALID INPUT!\n";
-        }
-    
-    }while (again != 'y' && again != 'Y' && again != 'N' && again != 'n'); // The program will keep displaying "Do you want to play again" if the input is NOT Y or N
+
+        playAgain(again, space);
          
     }while(again == 'Y' || again == 'y'); // The program returns to the main menu loop once the player inputs Y or N
     
@@ -666,5 +693,6 @@ int main(){
         cout << space << "                               𝗧𝗛𝗔𝗡𝗞𝗦 𝗙𝗢𝗥 𝗣𝗟𝗔𝗬𝗜𝗡𝗚!\n";
         cout << space << "─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─\n";
         cout << space << ". ݁₊ ⊹ . ݁ ⟡ ݁ . ⊹ ₊ ݁. . ݁₊ ⊹ . ݁ ⟡ ݁ . ⊹ ₊ ݁. . ݁₊ ⊹ . ݁ ⟡ ݁ . ⊹ ₊ ݁. . ݁₊ ⊹ . ݁ ⟡ ݁ . ⊹ ₊ ݁.\n";
+
 return 0;
 }
