@@ -13,7 +13,7 @@ A console number games arcade for one to four players, with three selectable gam
 
 ### 1. Hot or Cold?
 
-The program picks a mystery number from 0 to 30. Players take turns guessing, with 5 chances each. A guess within 10 of the number is **HOT**, and anything farther is **COLD**. Whoever guesses it first wins.
+The program picks a mystery number from 0 to 30. Players take turns guessing, with 7 chances each. A guess within 10 of the number is **HOT**, and anything farther is **COLD**. Whoever guesses it first wins.
 
 ### 2. I Forgot My Password...
 
