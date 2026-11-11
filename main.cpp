@@ -3,11 +3,11 @@
 #include <cstdlib>
 #include <ctime>
 #include <thread>
-#include <sstream>
 #include <chrono>
 
 using namespace std;
 
+// run via terminal: chcp 65001; cl /EHsc /utf-8 main.cpp; .\main.exe
 
 // FUNCTION 1: WELCOME BANNER
 void welcomeBanner(string space){
@@ -397,7 +397,6 @@ void playPassword(const string players[], int numPlayers, string space){
     string answer;
     bool correct = false;
     string winnerName;
-    int convert = 0;
     
     gameMode(mode, space);
     gameMechanics(mode, space);
@@ -418,22 +417,26 @@ void playPassword(const string players[], int numPlayers, string space){
                 cin >> answer;
                 cout << endl;
                 
-                std::stringstream ss(answer);
-                ss >> convert;
-            
-                if(!(ss >> convert) && !ss.eof()){
-                   cout << space << "Invalid input!";
-                   cout << "\n\n";
-                   attempt--;
-                   continue;
-               }
-               
-                //Must be 4 digits
-                if(answer.length() != passLength){
+                // Shows error if password is not 4 digits
+                if (answer.length() != passLength) {
                     cout << space << "Password must be exactly 4 digits.\n\n";
                     continue;
                 }
-                
+
+                //Every character must be a digit (rejects special characters and letters)
+                bool onlyDigits = true;
+                for (int i = 0; i < passLength; i++) {
+                    if (answer[i] < '0' || answer[i] > '9') {
+                        onlyDigits = false;
+                    }
+                }
+
+                if (!onlyDigits) {
+                    cout << space << "Invalid input!\n\n";
+                    attempt--;
+                    continue;
+                }
+
                 break;
             }
             
@@ -620,7 +623,7 @@ void playRaceTo21(const string players[], int numPlayers, string space){
 
         else{
             //DELAY so the player can read the result before the next turn
-            this_thread::sleep_for(chrono::seconds(3));
+            this_thread::sleep_for(chrono::seconds(2));
             
             //Next player (the computer counts as a 2nd player in solo mode)
             if(solo){
