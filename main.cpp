@@ -433,7 +433,6 @@ void playPassword(const string players[], int numPlayers, string space){
 
                 if (!onlyDigits) {
                     cout << space << "Invalid input!\n\n";
-                    attempt--;
                     continue;
                 }
 
